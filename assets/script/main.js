@@ -179,13 +179,16 @@ function printProducts() {
         classFilter,
     }) {
         const typeButton = stock
-            ? '<button class="btn btn__add">+</button>'
+            ? '<button class="btn btn__add button-pr bi bi-plus product_button"></button>'
             : '<button class="btn btn__NA">N / A</button>';
 
         html += `
-            <div class="product ${classFilter}">
-                <div class="product__img">
+            <div class="product ${classFilter} card" id="card_pr"">
+                <div class="img_products">
                     <img src="${urlImage}" alt="${name}" />
+                </div>
+                <div class="product_button" id="${id}">
+                    ${typeButton}
                 </div>
                 <div class="data_products">
                         <span class="price">$${price}.00</span>
@@ -193,9 +196,7 @@ function printProducts() {
                         <h3>${name}</h3>
                 </div>
 
-                <div class="product__options" id="${id}">
-                    ${typeButton}
-                </div>
+                
             </div>
         `;
     });
