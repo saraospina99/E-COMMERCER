@@ -101,7 +101,16 @@ function printTotalCart() {
 
     if (!arrayCart.length) {
         carTotal.innerHTML = `
-            <h3>No hay nada, a comprar!!!</h3>
+            <div class="empty_cart">
+                <div>
+                    <img src="./assets/img/empty-cart.png" alt="carro_vacio">
+                </div>
+                <br><br><br>
+                <div>
+                    <h3>Your cart is empty!!!</h3>
+                    <p>You can add items to your cart by clicking on the "+" button on the product page.</p>
+                </div>
+            </div>
         `;
 
         return;
@@ -152,23 +161,6 @@ function printProductsInCart() {
 function printProducts() {
     let html = "";
 
-    // cloths.forEach(function (cloth){
-    //     html += `
-    //         <div class="product">
-    //             <div class="product__img">
-    //                 <img src="${cloth.urlImage}" alt="${cloth.name}"/>
-    //             </div>
-    //             <div class"product__info">
-    //                 <p>Nombre: ${cloth.name}</p>
-    //                 <p>Precio: ${cloth.price}</p>
-    //                 <p>Stock: ${cloth.stock}</p>
-    //             </div>
-    //             <div class="product__options" id="${cloth.id}">
-    //                 <button class="btn btn__add">+</i></button>
-    //             </div>
-    //         </div>
-    //     `
-    // })
 
     cloths.forEach(function ({
         id,
