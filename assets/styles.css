@@ -168,24 +168,44 @@ body {
 }
 
 .contentCar {
-  margin-top: 23px;
-  height: 80vh;
-  min-width: 300px;
-  width: 40vw;
-  top: 50px;
-  right: 0;
-  position: fixed;
-  background-color: var(--color-1);
-  padding: 1rem;
-  transform: translateX(100%);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+    margin-top: 7px;
+    height: 80vh;
+    min-width: 300px;
+    width: 40vw;
+    top: 50px;
+    right: 0;
+    position: fixed;
+    background-color: var(--color-1);
+    padding: 1rem;
+    transform: translateX(100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 
-  transition: transform 0.5s;
+    transition: transform 0.5s;
+} 
+.contentCar > h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
 .contentCar__show {
-  transform: translateX(0);
+    transform: translateX(0);
+}
+
+.empty_cart {
+    margin-top: -65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.empty_cart img{
+    margin-top: 0;
+    margin-right: -50%;
+    width: 70%;
 }
 
 .carProducts {
