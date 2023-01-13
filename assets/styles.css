@@ -13,8 +13,28 @@
   --colorCard: #dddddd;
   --iconButton: #0c0c0c;
   --buttonHover: #ffffff;
+  --colorDark_tittle:#262625;
+  --coloradd_s:#262626;
+  --efectgood:hsla(206, 3%, 3%, 0.2);
+
+
   font-family: "Roboto", sans-serif;
 }
+
+body.darkmode {
+  background-color: #1f1d2a; 
+  --color-1: #FFC93C;
+  --colorDark_tittle:#f7f7f8;
+  --colorbody: #1f1d2a;
+  --colortext-2: #ffffff;;
+  --coloradd_s:#f7f7f8;
+  --colorbuttons: #1f1d2a;
+  --colorCard: #121218;
+  --efectgood: #FFC93C;
+  
+
+}
+
 
 * {
   margin: 0;
@@ -112,7 +132,7 @@ body {
   bottom: 5px;
   right: -7px;
 
-  background-color: var(--iconButton);
+  background-color: var(--color-1);
   color: var(--colorbuttons-3);
   font-size: 0.8rem;
   font-weight: bold;
@@ -161,7 +181,6 @@ body {
 
 .product {
   border-radius: 1rem;
-  background-color: var(--colorbody);
   display: flex;
   flex-direction: column;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -175,7 +194,7 @@ body {
   top: 50px;
   right: 0;
   position: fixed;
-  background-color: var(--color-1);
+  background-color: var(--colorbody);
   padding: 1rem;
   transform: translateX(100%);
   border-top-left-radius: 10px;
@@ -189,6 +208,7 @@ body {
 }
 
 .carProducts {
+  color:var(--colorDark_tittle) ;
   height: 80%;
   padding: 1rem;
   display: flex;
@@ -198,6 +218,8 @@ body {
 }
 
 .carProducts .product {
+  color:var(--colorDark_tittle) ;
+
   flex-direction: row;
   gap: 1rem;
   text-align: center;
@@ -206,6 +228,8 @@ body {
 }
 
 .carProducts .product p {
+  color:var(--colorDark_tittle) ;
+
     margin-bottom: 5px;
     margin-top: 3px;
 }
@@ -227,8 +251,8 @@ body {
 
 .carTotal {
   height: 20%;
-  background-color: var(--colorbody);
-  color: var(--colortexto);
+  background-color: var(--colorDark_tittle);
+  color: var(--colorbuttons);
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -246,20 +270,20 @@ body {
 .header {
   width: 100vw;
   padding: 0.5rem 1rem;
-  background-color: var(--bgtrans);
+  
   position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: 10vw;
-  background-color: white;
+  background-color: var(--colorbuttons);
   z-index: 1;
-  color: var(--colortexto);
+  color: var(--colorDark_tittle);
 }
 
 .header a:hover {
-  color: var(--hover);
+  color: var(--colorDark_tittle);
 }
 
 #sun {
@@ -322,12 +346,6 @@ body {
 
 /* -------------------- Aaron Mejia --------------------- */
 
-.boton {
-  height: 50px;
-  width: 50px;
-  background-color: #ffc93c;
-  border-radius: 3rem;
-}
 
 #container__home {
   display: grid;
@@ -349,6 +367,11 @@ body {
   padding-bottom: 2rem;
 }
 
+.buton {
+  cursor: pointer;
+  color: var(--color-1);
+}
+
 .home__info {
   padding: 1.4rem;
 }
@@ -357,14 +380,14 @@ body {
   font-size: 40px;
   margin-bottom: 1rem;
 
-  color: var(--colortexto);
+  color: var(--colorDark_tittle);
 }
 
 .paragraph__h {
   padding-bottom: 24px;
   font-size: 18px;
   font-weight: normal;
-  color: var(--colortexto);
+  color: var(--colorDark_tittle);
 }
 
 .price__h {
@@ -392,7 +415,7 @@ body {
   width: 160px;
   font-size: 14px;
   font-weight: 600;
-  color: var(--colorbuttons);
+  color: var(--buttonHover);
   background-color: var(--colortexto);
   border: none;
   cursor: pointer;
@@ -439,7 +462,7 @@ body {
 }
 
 .filter span {
-  color: var(--colortexto);
+  color: var(--coloradd_s);
   font-weight: 100;
 }
 
@@ -479,12 +502,14 @@ body {
 }
 
 .data_products {
-  background-color: white;
+  background-color: var(--colorbuttons);
   padding: 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .price {
+  color:var(--colorDark_tittle) ;
+
   font-size: 20px;
   font-weight: 500;
 }
@@ -496,9 +521,10 @@ body {
 }
 
 .data_products h3 {
-  font-size: 15px;
-  font-family: sans-serif;
-  font-weight: 100;
+  color:var(--colorDark_tittle) ;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
@@ -518,12 +544,12 @@ body {
   left: 9rem;
   top: -1.3rem;
   align-items: center;
-  box-shadow: 0 4px 12px hsla(206, 3%, 3%, 0.2);
+  box-shadow: 0 4px 12px var(--efectgood);
   overflow: hidden;
 }
 
 .bi {
-  color: var(--iconButton);
+  color: var(--colorDark_tittle);
   display: flex;
   align-items: center;
 }
@@ -563,13 +589,14 @@ section.information {
 
 .tittle {
   margin-bottom: 25px;
-  color: var(--colortexto);
+  color: var(--colorDark_tittle);
 }
 .content_footer .links {
   display: flex;
   flex-direction: column;
   row-gap: 0.6rem;
-  color: var(--colortext-2);
+  color: var(--coloradd_s);
+  font-weight: 100;
 }
 
 .footer_social .Social {
@@ -584,16 +611,19 @@ section.information {
 body hr {
   border: none;
   height: 1px;
-  background-color: var(--colorLine);
+  background-color: var(--buttonHover);
 }
 
 .repository {
   text-align: center;
-  color: var(--colortexto);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--colorDark_tittle);
 }
 
 .footer_trademark {
   text-align: center;
+  font-size: 14px;
   color: var(--colortext-2);
 }
 
@@ -629,7 +659,7 @@ body hr {
 
   .main-menu__desktop a {
     text-decoration: none;
-    color: var(--colortexto);
+    color: var(--colorDark_tittle);
   }
 
   .toggle-menu,
